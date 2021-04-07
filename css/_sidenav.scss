@@ -1,0 +1,19 @@
+.sidebar {
+  max-width: 24.9375rem;
+  min-height: 100vh;
+  padding: 41px;
+  color: #9c9c9c;
+
+  .accordion-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-snowflake {
+    color: #c033d3;
+  }
+  .sidebar-brand-text {
+    color: #333;
+    font-weight: bold;
+  }
+}

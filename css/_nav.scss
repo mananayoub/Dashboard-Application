@@ -1,0 +1,29 @@
+.topbar {
+  height: 4.375rem;
+
+  .navbar-search {
+    width: 26rem;
+    input {
+      font-size: 0.85rem;
+      height: auto;
+    }
+  }
+  .icons {
+    display: flex;
+  }
+  .nav-link {
+    display: flex;
+
+    span {
+      font-size: 12px;
+      display: block;
+    }
+  }
+  .p-img {
+    height: 40px;
+  }
+  .p-name {
+    color: #333;
+    font-weight: bold;
+  }
+}
