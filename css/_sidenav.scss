@@ -1,8 +1,10 @@
 .sidebar {
-  max-width: 24.9375rem;
+  width: 250px;
   min-height: 100vh;
-  padding: 41px;
+  padding: 20px;
+  margin: 24px;
   color: #9c9c9c;
+  font-size: 14px;
 
   .accordion-body {
     display: flex;
@@ -15,5 +17,17 @@
   .sidebar-brand-text {
     color: #333;
     font-weight: bold;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+
+    .fa-chevron-right {
+      margin-left: auto;
+    }
+    .fa-chevron-down {
+      margin-left: auto;
+    }
   }
 }

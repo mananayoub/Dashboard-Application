@@ -1,7 +1,6 @@
 .welcome {
   max-width: 126.5rem;
   height: 12.6875rem;
-  background: rgb(255, 191, 156);
   background: linear-gradient(
     90deg,
     rgba(255, 191, 156, 1) 16%,
@@ -51,6 +50,7 @@
 .my-items {
   min-width: 380px;
   color: #9c9c9c;
+  background-color: #fff;
 
   .item-heading h5 {
     color: #333;
@@ -95,6 +95,7 @@
   }
 
   .progress-g {
+    padding: 6px;
     color: #8dec8d;
     height: 35px;
     width: 67px;

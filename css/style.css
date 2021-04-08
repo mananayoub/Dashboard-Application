@@ -29,11 +29,28 @@ a {
   width: 1082px;
 }
 
+.bg-color {
+  background-color: #f1f1f1;
+  padding-top: 0.8rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.accordion-body {
+  background-color: rgba(235, 235, 235, 0.4);
+}
+
+.accordion-body .collapse-item {
+  margin: 5px 1.5rem;
+}
+
 .sidebar {
-  max-width: 24.9375rem;
+  width: 250px;
   min-height: 100vh;
-  padding: 41px;
+  padding: 20px;
+  margin: 24px;
   color: #9c9c9c;
+  font-size: 14px;
 }
 
 .sidebar .accordion-body {
@@ -55,8 +72,28 @@ a {
   font-weight: bold;
 }
 
+.sidebar .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .nav-link .fa-chevron-right {
+  margin-left: auto;
+}
+
+.sidebar .nav-link .fa-chevron-down {
+  margin-left: auto;
+}
+
 .topbar {
   height: 4.375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topbar .navbar-search {
@@ -68,36 +105,31 @@ a {
   height: auto;
 }
 
-.topbar .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.topbar .nav-link h6 {
+  font-size: 13px;
+  color: #333;
 }
 
-.topbar .nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.topbar .nav-link span {
+.topbar .nav-link p {
   font-size: 12px;
-  display: block;
+  opacity: 0.7;
 }
 
-.topbar .p-img {
+.topbar .nav-link img {
   height: 40px;
 }
 
-.topbar .p-name {
-  color: #333;
-  font-weight: bold;
+.topbar .profile {
+  padding: 6px;
+}
+
+.topbar .profile .text {
+  margin: 18px 0 0 18px;
 }
 
 .welcome {
   max-width: 126.5rem;
   height: 12.6875rem;
-  background: #ffbf9c;
   background: -webkit-gradient(linear, left top, right top, color-stop(16%, #ffbf9c), color-stop(41%, #c96aa2), color-stop(68%, #d651cd), color-stop(83%, #8c5eea), to(#8f22e3));
   background: linear-gradient(90deg, #ffbf9c 16%, #c96aa2 41%, #d651cd 68%, #8c5eea 83%, #8f22e3 100%);
   display: -webkit-box;
@@ -159,6 +191,7 @@ a {
 .my-items {
   min-width: 380px;
   color: #9c9c9c;
+  background-color: #fff;
 }
 
 .my-items .item-heading h5 {
@@ -202,6 +235,7 @@ a {
 }
 
 .items-profile .progress-g {
+  padding: 6px;
   color: #8dec8d;
   height: 35px;
   width: 67px;

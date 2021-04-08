@@ -25,3 +25,17 @@ a {
 #content-wrapper {
   width: 1082px;
 }
+
+.bg-color {
+  background-color: #f1f1f1;
+  padding-top: 0.8rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.accordion-body {
+  background-color: rgba(235, 235, 235, 0.4);
+  .collapse-item {
+    margin: 5px 1.5rem;
+  }
+}

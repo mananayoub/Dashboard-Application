@@ -1,5 +1,6 @@
 .topbar {
   height: 4.375rem;
+  align-items: center;
 
   .navbar-search {
     width: 26rem;
@@ -8,22 +9,25 @@
       height: auto;
     }
   }
-  .icons {
-    display: flex;
-  }
-  .nav-link {
-    display: flex;
 
-    span {
+  .nav-link {
+    h6 {
+      font-size: 13px;
+      color: #333;
+    }
+    p {
       font-size: 12px;
-      display: block;
+      opacity: 0.7;
+    }
+
+    img {
+      height: 40px;
     }
   }
-  .p-img {
-    height: 40px;
-  }
-  .p-name {
-    color: #333;
-    font-weight: bold;
+  .profile {
+    padding: 6px;
+    .text {
+      margin: 18px 0 0 18px;
+    }
   }
 }
