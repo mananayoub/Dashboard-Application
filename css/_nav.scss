@@ -1,6 +1,13 @@
 .topbar {
-  height: 4.375rem;
-  align-items: center;
+  height: 4rem;
+
+  .fa-snowflake {
+    color: #c033d3;
+  }
+  .sidebar-brand-icon {
+    margin: 0 30px;
+    padding-right: 42px;
+  }
 
   .navbar-search {
     width: 26rem;
@@ -12,12 +19,12 @@
 
   .nav-link {
     h6 {
-      font-size: 13px;
+      font-size: 12px;
       color: #333;
     }
     p {
-      font-size: 12px;
-      opacity: 0.7;
+      font-size: 11px;
+      opacity: 0.6;
     }
 
     img {
@@ -25,7 +32,6 @@
     }
   }
   .profile {
-    padding: 6px;
     .text {
       margin: 18px 0 0 18px;
     }

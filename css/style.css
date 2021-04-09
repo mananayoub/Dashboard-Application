@@ -19,16 +19,6 @@ a {
   color: #9c9c9c;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#content-wrapper {
-  width: 1082px;
-}
-
 .bg-color {
   background-color: #f1f1f1;
   padding-top: 0.8rem;
@@ -45,12 +35,13 @@ a {
 }
 
 .sidebar {
-  width: 250px;
-  min-height: 100vh;
-  padding: 20px;
-  margin: 24px;
   color: #9c9c9c;
   font-size: 14px;
+}
+
+.sidebar .sidebar-sticky {
+  width: 235px;
+  padding-right: 16px;
 }
 
 .sidebar .accordion-body {
@@ -61,15 +52,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.sidebar .fa-snowflake {
-  color: #c033d3;
-}
-
-.sidebar .sidebar-brand-text {
-  color: #333;
-  font-weight: bold;
 }
 
 .sidebar .nav-link {
@@ -83,17 +65,25 @@ a {
 
 .sidebar .nav-link .fa-chevron-right {
   margin-left: auto;
+  padding-right: 10px;
 }
 
 .sidebar .nav-link .fa-chevron-down {
   margin-left: auto;
+  padding-right: 10px;
 }
 
 .topbar {
-  height: 4.375rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 4rem;
+}
+
+.topbar .fa-snowflake {
+  color: #c033d3;
+}
+
+.topbar .sidebar-brand-icon {
+  margin: 0 30px;
+  padding-right: 42px;
 }
 
 .topbar .navbar-search {
@@ -106,21 +96,17 @@ a {
 }
 
 .topbar .nav-link h6 {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
 }
 
 .topbar .nav-link p {
-  font-size: 12px;
-  opacity: 0.7;
+  font-size: 11px;
+  opacity: 0.6;
 }
 
 .topbar .nav-link img {
   height: 40px;
-}
-
-.topbar .profile {
-  padding: 6px;
 }
 
 .topbar .profile .text {

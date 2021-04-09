@@ -1,22 +1,15 @@
 .sidebar {
-  width: 250px;
-  min-height: 100vh;
-  padding: 20px;
-  margin: 24px;
   color: #9c9c9c;
   font-size: 14px;
+
+  .sidebar-sticky {
+    width: 235px;
+    padding-right: 16px;
+  }
 
   .accordion-body {
     display: flex;
     flex-direction: column;
-  }
-
-  .fa-snowflake {
-    color: #c033d3;
-  }
-  .sidebar-brand-text {
-    color: #333;
-    font-weight: bold;
   }
 
   .nav-link {
@@ -25,9 +18,11 @@
 
     .fa-chevron-right {
       margin-left: auto;
+      padding-right: 10px;
     }
     .fa-chevron-down {
       margin-left: auto;
+      padding-right: 10px;
     }
   }
 }

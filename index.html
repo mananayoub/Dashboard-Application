@@ -10,36 +10,72 @@
     <title>Application DashBoard</title>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <ul class="navbar-nav sidebar accordion" id="accordionSidebar"> 
-           <!-- Sidebar Brand -->
-            <a href="" class="sidebar-brand d-flex mb-4">
-                <div class="sidebar-brand-icon">
-                    <i class="far fa-snowflake"></i>
+    
+      <nav class="navbar-nav topbar">
+          <div href="" class="sidebar-brand  d-flex align-items-center justify-content-between">
+            <div class="sidebar-brand-icon d-flex align-items-center border-right ">
+              <div class="d-flex  align-items-center py-4 ">
+                <i class="far fa-snowflake m-1 pr-1"></i>
+                <a class="sidebar-brand-text text-dark mr-3 pr-5"><b>Turbineo</b></a>
+              </div>
+            </div>
+            <div class="ml-5">
+              <form class="navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0" placeholder="Type in to Search...">
+                  <button class="btn btn-primary"> <i class="fas fa-search fa-sm"></i></button>
                 </div>
-                <div class="sidebar-brand-text mx-3">Turbineo</div>
-            </a>
+              </form>
+            </div>
+            <div class="icons d-flex ml-auto mr-5">
+                <div>
+                  <a href="#" class="nav-link mx-3">
+                    <i class="fas fa-bell fa-fw"></i>
+                    <span class="badge badge-primary bage-counter">4</span>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-clock fa-fw"></i>
+                    <span class="badge badge-primary bage-counter mr-2">0</span>
+                 </a>
+                </div>
+                <div>
+                  <a href="#" class="nav-link">
+                    <i class="fab fa-opencart"></i>
+                    <span class="badge badge-primary bage-counter">8</span>
+                 </a>
+                </div>
+              </div>
+               <a href="#" class="nav-link d-flex align-items-center border-left px-3 profile mr-2">
+                <img src="./img/undraw_profile.svg" alt="">
+                <div class="text px-1">
+                  <h6> <b>Li Jordan</b> </h6>
+                  <p>Portal Adminstrator</p>
+                </div>
+              </a>
+         </div>
+      </nav>
 
-               <!-- Nav Item - Dashboard -->
-               <div class="side-1">
-               <li class="nav-item ">
-                 <a class="nav-link border-bottom border-top py-3" href="index.html">
+      <!-- Sidenav -->
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse">
+            <div class="sidebar-sticky mt-3">
+              <ul class="nav flex-column accordion" id="accordionSidebar">
+                <li class="nav-item">
+                  <a class="nav-link border-bottom border-top pb-3 pt-3" href="index.html">
                     <i class="fas fa-home pr-3"></i>
                     <span>Home</span></a>
-              </li>
-
-              <!-- Nav Item - Dashboard -->
-              <li class="nav-item py-2">
-                <a class="nav-link border-bottom pb-3" href="index.html">
-                    <i class="fas fa-calendar-check pr-3"></i>
-                   <span>Application </span>
-                   <i class="fas fa-chevron-right"></i>
-                </a>   
-             </li>
-
-               <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item accordion-item active py-2" >
+                </li>
+                <li class="nav-item py-2">
+                  <a class="nav-link border-bottom pb-3" href="index.html">
+                     <i class="fas fa-calendar-check pr-3"></i>
+                     <span>Application </span>
+                     <i class="fas fa-chevron-right"></i>
+                  </a>   
+               </li>
+               <li class="nav-item accordion-item active py-2" >
                 <a class="nav-link accordion-header  border-bottom pb-3" href="#" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-network-wired pr-2"></i>
@@ -58,378 +94,318 @@
                     </div>
                 </div>
             </li>
-
-             <!-- Nav Item - Dashboard -->
-             <li class="nav-item py-2">
-                <a class="nav-link border-bottom pb-3" href="index.html">
+              <li class="nav-item py-2">
+                 <a class="nav-link border-bottom pb-3" href="index.html">
                     <i class="far fa-lightbulb pr-3"></i>
-                   <span>Facilities </span><i class="fas fa-chevron-right"></i></a>
-             </li>
-
-               <!-- Nav Item - Dashboard -->
-               <li class="nav-item py-2">
-                <a class="nav-link border-bottom pb-3" href="index.html">
-                    <i class="fas fa-hotel pr-2"></i>
-                   <span>Human Resources </span><i class="fas fa-chevron-right"></i></a>
-             </li>
-
-               <!-- Nav Item - Dashboard -->
-               <li class="nav-item py-2">
-                <a class="nav-link border-bottom pb-3" href="index.html">
-                    <i class="fas fa-mask pr-2"></i><span>Information Security</span><i class="fas fa-chevron-right"></i></a>
-             </li>
-
-               <!-- Nav Item - Dashboard -->
-               <li class="nav-item">
-                <a class="nav-link " href="index.html">
-                    <i class="fas fa-spinner pr-2"></i>
-                   <span>Operations </span><i class="fas fa-chevron-right"></i></a>
-             </li>        
-        </div>
-
-             <!-- Button -->
-             <div class="mt-5 text-center">
-                 <button class="btn btn-primary">Chat With Us </buton>
-             </div>
-        </ul>
-
-        <!-- Conetent Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-            <!-- Main Content -->
-         <div id="content">
-               <!-- Topbar -->
-            <div class="navbar topbar mb-4"> 
-                <form class="navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Type in to Search...">
-                    <button class="btn btn-primary"> <i class="fas fa-search fa-sm"></i></button>
-                  </div>
-                </form>
-               <div class="d-flex">
-                <div class="d-flex align-items-center">
-                  <div class="icons">
-                    <a href="#" class="nav-link">
-                     <i class="fas fa-bell fa-fw"></i>
-                     <span class="badge badge-primary bage-counter">4</span>
-                    </a>
-                  </div>
-                  <div class="icons">
-                   <a href="#" class="nav-link">
-                     <i class="fas fa-clock fa-fw"></i>
-                    <span class="badge badge-primary bage-counter">0</span>
-                   </a>
-                 </div>
-                 <div class="icons">
-                   <a href="#" class="nav-link">
-                     <i class="fab fa-opencart"></i>
-                     <span class="badge badge-primary bage-counter border-right">8</span>
-                   </a>
-                 </div>   
-                </div>
-                 <a href="#" class="nav-link d-flex align-items-center border-left px-3 profile">
-                   <img src="./img/undraw_profile.svg" alt="">
-                   <div class="text px-1">
-                     <h6> <b>Li Jordan</b> </h6>
-                     <p>Portal Adminstrator</p>
-                   </div>
+                    <span>Facilities </span><i class="fas fa-chevron-right"></i>
                  </a>
-               </div>
-            </div>
-        <!-- Page Content -->
-        <div class="bg-color ">
-         <div class="container">
-            <div class="welcome mt-4 rounded">
-                <img src="./img/undraw_profile.svg" alt="" class="welcome-img mx-3">
-                <div>
-                    <h3>Welcome Li,</h3>
-                    <p>We're here to help, Please let us know what you need</p>
-                </div>
-                <div class="welcome-box text-center rounded mx-1 ">
-                    <i class="fas fa-atom fa-3x pr-3"></i>
-                    <div class="pills">
-                        <span class="lead">12</span>
-                        <span>Problem</span>
-                    </div>
-                </div>
-                <div class="welcome-box text-center rounded mx-1">
-                    <i class="fas fa-atom fa-3x pr-3"></i>
-                    <div class="pills">
-                        <span class="lead">14</span>
-                        <span>Changes</span>
-                    </div>
-                </div>
-                <div class="welcome-box text-center rounded mr-2">
-                    <i class="fas fa-atom fa-3x pr-3 "></i>
-                    <div class="pills">
-                        <span class="lead">17</span>
-                        <span>Requests</span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <!-- Carousel Section -->
-        <div class="container mt-4 d-flex justify-content-between flex-wrap">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-section" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1593697909822-5d9da12b4680?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1597809259188-0e5ffcbb0ba9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1615714913530-9ff56a9f1966?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+             </li>
+             <li class="nav-item py-2">
+                 <a class="nav-link border-bottom pb-3" href="index.html">
+                    <i class="fas fa-hotel pr-2"></i>
+                    <span>Human Resources </span><i class="fas fa-chevron-right"></i>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+              </li>
+              <li class="nav-item py-2">
+                  <a class="nav-link border-bottom pb-3" href="index.html">
+                     <i class="fas fa-mask pr-2"></i><span>Information Security</span><i class="fas fa-chevron-right"></i>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                  <i class="fas fa-spinner pr-2"></i>
+                  <span>Operations </span><i class="fas fa-chevron-right"></i>
                 </a>
+             </li>   
+              <div class="mt-5 text-center">
+                  <button class="btn btn-primary">Chat With Us </buton>
+             </div>
+              </ul>
+            </div>
+          </nav>
 
-                 <!-- Card Section -->
-                <div class="container mt-4 p-3">
-                    <h4 class="text-dark">Suggested Items for you</h4>
-                    <div class="card-deck card-section">
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">MacBook Pro 15"</h5>
-                            <p class="card-text">2019</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details</small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">iMac 27"</h5>
-                            <p class="card-text pt-3">2019</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details </small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">iphone XS</h5>
-                            <p class="card-text pt-3">65 gb</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details </small>
-                          </div>
-                        </div>
-                        <div class="card">
-                            <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Apple Watch 3 38mm</h5>
-                              <p class="card-text">2019</p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">View details </small>
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="card-deck card-section">
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Access to Pepsi"</h5>
-                            <p class="card-text">0,331</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details</small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Access to Google Drive</h5>
-                            <p class="card-text">1t</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details </small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acess to Sketch</h5>
-                            <p class="card-text">52</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">View details </small>
-                          </div>
-                        </div>
-                        <div class="card">
-                            <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Apple Watch 3 38mm</h5>
-                              <p class="card-text">2019</p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">View details </small>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-        </div>  
-
-              <!-- Card -->
-              <div class="my-items border rounded-lg">
-                 <div class="item-heading d-flex justify-content-between  mt-4 align-items-center border-bottom">
-                     <div>
-                         <h5 class="pl-4">My Items</h5>
-                     </div>
-                     <div class="pr-4">
-                        <i class="fas fa-plus "></i>
-                     </div>
-                 </div>
-
-                 <!-- Carousel-Cards profile -->
-                 <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                     <div class="items-content d-flex p-3 ">
-                         <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                         <div class="item-name">
-                           <h6>2 Requested Items</h6>
-                           <p>3 min ago</p>
-                         </div>
-                     </div>
-
-                     <div class="progress align-items-center mr-4 rounded">
-                        <span class="pl-2">In Progress</span>
-                     </div>
-                  </div>
-
-                  <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                    <div class="items-content d-flex p-3 ">
-                        <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                        <div class="item-name">
-                          <h6>Sketch</h6>
-                          <p>4 min ago</p>
-                        </div>
-                    </div>
-
-                    <div class="progress align-items-center mr-4 rounded">
-                       <span class="pl-2">In Progress</span>
-                    </div>
-                 </div>
-
-                 <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                    <div class="items-content d-flex p-3 ">
-                        <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                        <div class="item-name">
-                          <h6>Flights to New York</h6>
-                          <p>10 min ago</p>
-                        </div>
-                    </div>
-
-                    <div class="progress-g align-items-center mr-4 rounded">
-                       <span class="pl-2">Open</span>
-                    </div>
-                 </div>
-
-                 <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                    <div class="items-content d-flex p-3 ">
-                        <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                        <div class="item-name">
-                          <h6>1893 Citrus Pepsi</h6>
-                          <p>15 min ago</p>
-                        </div>
-                    </div>
-
-                    <div class="progress-g align-items-center mr-4 rounded">
-                       <span class="pl-2">Open</span>
-                    </div>
-                 </div>
-
-                 <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                    <div class="items-content d-flex p-3 ">
-                        <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                        <div class="item-name">
-                          <h6>Table Lamp-Ikea</h6>
-                          <p>27 min ago</p>
-                        </div>
-                    </div>
-
-                    <div class="progress-g align-items-center mr-4 rounded">
-                       <span class="pl-2">Open</span>
-                    </div>
-                 </div>
-
-                 <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
-                    <div class="items-content d-flex p-3 ">
-                        <img class="pr-4" src="./img/undraw_profile.svg" alt="">
-                        <div class="item-name">
-                          <h6>Access to Google Drive</h6>
-                          <p>30 min ago</p>
-                        </div>
-                    </div>
-
-                    <div class="progress-g align-items-center mr-4 rounded">
-                       <span class="pl-2">Open</span>
-                    </div>
-                 </div>
-
-                 <div class="item-heading d-flex justify-content-between  my-3 align-items-center">
+          <!-- Content Section -->
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-3 my-3 bg-color">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center  pb-2 mb-3 ">
+              <div>
+                <div class="welcome mt-4 rounded mx-3">
+                    <img src="./img/undraw_profile.svg" alt="" class="welcome-img mx-3">
                     <div>
-                        <a href="" class="text-primary ml-4">View All</a>
+                        <h3>Welcome Li,</h3>
+                        <p>We're here to help, Please let us know what you need</p>
                     </div>
-                    <div class="pr-4">
-                       <span> <b> First 6 of 16</b></span>
+                    <div class="welcome-box text-center rounded mx-1 ">
+                        <i class="fas fa-atom fa-3x pr-3"></i>
+                        <div class="pills">
+                            <span class="lead">12</span>
+                            <span>Problem</span>
+                        </div>
+                    </div>
+                    <div class="welcome-box text-center rounded mx-1">
+                        <i class="fas fa-atom fa-3x pr-3"></i>
+                        <div class="pills">
+                            <span class="lead">14</span>
+                            <span>Changes</span>
+                        </div>
+                    </div>
+                    <div class="welcome-box text-center rounded mr-2">
+                        <i class="fas fa-atom fa-3x pr-3 "></i>
+                        <div class="pills">
+                            <span class="lead">17</span>
+                            <span>Requests</span>
+                        </div>
                     </div>
                 </div>
+                <div class="container mt-4 d-flex justify-content-between flex-wrap">
+                  <div id="carouselExampleCaptions" class="carousel slide carousel-section" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://images.unsplash.com/photo-1593697909822-5d9da12b4680?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://images.unsplash.com/photo-1597809259188-0e5ffcbb0ba9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://images.unsplash.com/photo-1615714913530-9ff56a9f1966?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+      
+                       <!-- Card Section -->
+                      <div class="container mt-4 p-3">
+                          <h4 class="text-dark">Suggested Items for you</h4>
+                          <div class="card-deck card-section">
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">MacBook Pro 15"</h5>
+                                  <p class="card-text">2019</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details</small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">iMac 27"</h5>
+                                  <p class="card-text pt-3">2019</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details </small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">iphone XS</h5>
+                                  <p class="card-text pt-3">65 gb</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details </small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                  <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Apple Watch 3 38mm</h5>
+                                    <p class="card-text">2019</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <small class="text-muted">View details </small>
+                                  </div>
+                                </div>
+                            </div>
+      
+                            <div class="card-deck card-section">
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Access to Pepsi"</h5>
+                                  <p class="card-text">0,331</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details</small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Access to Google Drive</h5>
+                                  <p class="card-text">1t</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details </small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Acess to Sketch</h5>
+                                  <p class="card-text">52</p>
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted">View details </small>
+                                </div>
+                              </div>
+                              <div class="card">
+                                  <img src="./img/undraw_profile.svg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Apple Watch 3 38mm</h5>
+                                    <p class="card-text">2019</p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <small class="text-muted">View details </small>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+              </div>  
+      
+                    <!-- Card -->
+                    <div class="my-items border rounded-lg">
+                       <div class="item-heading d-flex justify-content-between  mt-4 align-items-center border-bottom">
+                           <div>
+                               <h5 class="pl-4">My Items</h5>
+                           </div>
+                           <div class="pr-4">
+                              <i class="fas fa-plus "></i>
+                           </div>
+                       </div>
+      
+                       <!-- Carousel-Cards profile -->
+                       <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                           <div class="items-content d-flex p-3 ">
+                               <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                               <div class="item-name">
+                                 <h6>2 Requested Items</h6>
+                                 <p>3 min ago</p>
+                               </div>
+                           </div>
+                           <div class="progress align-items-center mr-4 rounded">
+                              <span class="pl-2">In Progress</span>
+                           </div>
+                        </div>
+                        <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                          <div class="items-content d-flex p-3 ">
+                              <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                              <div class="item-name">
+                                <h6>Sketch</h6>
+                                <p>4 min ago</p>
+                              </div>
+                          </div>  
+                          <div class="progress align-items-center mr-4 rounded">
+                             <span class="pl-2">In Progress</span>
+                          </div>
+                       </div>
+                       <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                          <div class="items-content d-flex p-3 ">
+                              <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                              <div class="item-name">
+                                <h6>Flights to New York</h6>
+                                <p>10 min ago</p>
+                              </div>
+                          </div>
+                          <div class="progress-g align-items-center mr-4 rounded">
+                             <span class="pl-2">Open</span>
+                          </div>
+                        </div>   
+                       <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                          <div class="items-content d-flex p-3 ">
+                              <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                              <div class="item-name">
+                                <h6>1893 Citrus Pepsi</h6>
+                                <p>15 min ago</p>
+                              </div>
+                          </div>
+                          <div class="progress-g align-items-center mr-4 rounded">
+                             <span class="pl-2">Open</span>
+                          </div>
+                       </div>    
+                       <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                          <div class="items-content d-flex p-3 ">
+                              <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                              <div class="item-name">
+                                <h6>Table Lamp-Ikea</h6>
+                                <p>27 min ago</p>
+                              </div>
+                          </div>     
+                          <div class="progress-g align-items-center mr-4 rounded">
+                             <span class="pl-2">Open</span>
+                          </div>
+                       </div>     
+                       <div class="items-profile d-flex align-items-center justify-content-between border-bottom">
+                          <div class="items-content d-flex p-3 ">
+                              <img class="pr-4" src="./img/undraw_profile.svg" alt="">
+                              <div class="item-name">
+                                <h6>Access to Google Drive</h6>
+                                <p>30 min ago</p>
+                              </div>
+                          </div>    
+                          <div class="progress-g align-items-center mr-4 rounded">
+                             <span class="pl-2">Open</span>
+                          </div>
+                       </div> 
+                       <div class="item-heading d-flex justify-content-between  my-3 align-items-center">
+                          <div>
+                              <a href="" class="text-primary ml-4">View All</a>
+                          </div>
+                          <div class="pr-4">
+                             <span> <b> First 6 of 16</b></span>
+                          </div>
+                      </div>
+                      <!-- To-Do -->
+                      <div class="to-do mt-3">
+                        <div class="item-heading d-flex justify-content-between  mt-4 align-items-center border p-3">
+                            <div >
+                                <h5 class="pl-4 ">My Items</h5>
+                            </div>
+                            <div class="pr-4">
+                               <i class="fas fa-plus "></i>
+                            </div>
+                        </div>
+                        <div class="to-do-item d-flex flex-column align-items-center">
+                            <i class="far fa-check-circle fa-6x my-4"></i>
+                            <h4>No To - Do</h4>
+                            <span>You currently have no To -Dos</span>
+                        </div>
+                    </div>
+                    </div>       
+              </div>
+            </div> 
+            
 
-                <!-- To-Do -->
-                <div class="to-do mt-3">
-                  <div class="item-heading d-flex justify-content-between  mt-4 align-items-center border p-3">
-                      <div >
-                          <h5 class="pl-4 ">My Items</h5>
-                      </div>
-                      <div class="pr-4">
-                         <i class="fas fa-plus "></i>
-                      </div>
-                  </div>
-  
-                  <div class="to-do-item d-flex flex-column align-items-center">
-                      <i class="far fa-check-circle fa-6x my-4"></i>
-                      <h4>No To - Do</h4>
-                      <span>You currently have no To -Dos</span>
-                  </div>
-              </div>
-              </div>
-             
+            </div>
+          </main>
+
         </div>
       </div>
-        
-
-     </div>
-   </div>
-</div>
+    
+      
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
