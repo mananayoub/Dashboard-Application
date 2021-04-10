@@ -13,6 +13,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  background-color: #f1f1f1;
 }
 
 a {
@@ -22,8 +23,7 @@ a {
 .bg-color {
   background-color: #f1f1f1;
   padding-top: 0.8rem;
-  margin: 0 auto;
-  z-index: 1;
+  margin-left: 280px;
 }
 
 .accordion-body {
@@ -37,11 +37,8 @@ a {
 .sidebar {
   color: #9c9c9c;
   font-size: 14px;
-}
-
-.sidebar .sidebar-sticky {
-  width: 235px;
-  padding-right: 16px;
+  background-color: #fff;
+  padding: 0;
 }
 
 .sidebar .accordion-body {
@@ -74,7 +71,14 @@ a {
 }
 
 .topbar {
-  height: 4rem;
+  height: 60px;
+}
+
+.topbar .sidebar-brand {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .topbar .fa-snowflake {
@@ -103,19 +107,17 @@ a {
 .topbar .nav-link p {
   font-size: 11px;
   opacity: 0.6;
+  margin: 0;
 }
 
 .topbar .nav-link img {
   height: 40px;
-}
-
-.topbar .profile .text {
-  margin: 18px 0 0 18px;
+  padding: 0 16px;
 }
 
 .welcome {
-  max-width: 126.5rem;
   height: 12.6875rem;
+  width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(16%, #ffbf9c), color-stop(41%, #c96aa2), color-stop(68%, #d651cd), color-stop(83%, #8c5eea), to(#8f22e3));
   background: linear-gradient(90deg, #ffbf9c 16%, #c96aa2 41%, #d651cd 68%, #8c5eea 83%, #8f22e3 100%);
   display: -webkit-box;

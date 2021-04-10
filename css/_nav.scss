@@ -1,5 +1,12 @@
 .topbar {
-  height: 4rem;
+  height: 60px;
+
+  .sidebar-brand {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
 
   .fa-snowflake {
     color: #c033d3;
@@ -25,15 +32,12 @@
     p {
       font-size: 11px;
       opacity: 0.6;
+      margin: 0;
     }
 
     img {
       height: 40px;
-    }
-  }
-  .profile {
-    .text {
-      margin: 18px 0 0 18px;
+      padding: 0 16px;
     }
   }
 }
