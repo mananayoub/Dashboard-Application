@@ -51,6 +51,10 @@ a {
           flex-direction: column;
 }
 
+.sidebar .nav-item {
+  margin-left: 16px;
+}
+
 .sidebar .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +66,10 @@ a {
 
 .sidebar .nav-link .fa-chevron-right {
   margin-left: auto;
-  padding-right: 10px;
 }
 
 .sidebar .nav-link .fa-chevron-down {
   margin-left: auto;
-  padding-right: 10px;
 }
 
 .topbar {
@@ -177,9 +179,9 @@ a {
 }
 
 .my-items {
-  min-width: 380px;
   color: #9c9c9c;
   background-color: #fff;
+  padding: 0;
 }
 
 .my-items .item-heading h5 {

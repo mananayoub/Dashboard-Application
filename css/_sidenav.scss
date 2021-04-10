@@ -9,17 +9,18 @@
     flex-direction: column;
   }
 
+  .nav-item {
+    margin-left: 16px;
+  }
   .nav-link {
     display: flex;
     align-items: center;
 
     .fa-chevron-right {
       margin-left: auto;
-      padding-right: 10px;
     }
     .fa-chevron-down {
       margin-left: auto;
-      padding-right: 10px;
     }
   }
 }
