@@ -3,24 +3,25 @@
   font-size: 14px;
   background-color: #fff;
   padding: 0;
+  display: inline-block;
+  width: 274px;
 
   .accordion-body {
     display: flex;
     flex-direction: column;
   }
 
-  .nav-item {
-    margin-left: 16px;
-  }
   .nav-link {
     display: flex;
     align-items: center;
 
     .fa-chevron-right {
       margin-left: auto;
+      font-size: 10px;
     }
     .fa-chevron-down {
       margin-left: auto;
+      font-size: 10px;
     }
   }
 }

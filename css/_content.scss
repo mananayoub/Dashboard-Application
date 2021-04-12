@@ -1,172 +1,186 @@
 .welcome {
-  height: 12.6875rem;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 191, 156, 1) 16%,
-    rgba(201, 106, 162, 1) 41%,
-    rgba(214, 81, 205, 1) 68%,
-    rgba(140, 94, 234, 1) 83%,
-    rgba(143, 34, 227, 1) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 30px 16px 0 31px;
 
-  .welcome-img {
-    height: 100px;
-  }
-
-  .welcome-box {
-    width: 12rem;
-    height: 7.374rem;
-    background-color: #3333;
+  .welcome-content {
+    height: 10.688rem;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 191, 156, 1) 16%,
+      rgba(201, 106, 162, 1) 41%,
+      rgba(214, 81, 205, 1) 68%,
+      rgba(140, 94, 234, 1) 83%,
+      rgba(143, 34, 227, 1) 100%
+    );
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 
-    .pills {
+    .welcome-img {
+      height: 100px;
+    }
+
+    .welcome-box {
+      width: 150px;
+      height: 90px;
+      background-color: #3333;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
 
-      .lead {
-        font-weight: bold;
+      .pills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .lead {
+          font-weight: bold;
+        }
       }
     }
   }
-}
-//Carousel Section
-.carousel-section {
-  max-width: 630px;
-  max-height: 300px;
+  //Carousel Section
+  .carousel-section {
+    max-width: 690px;
 
-  .carousel-item {
-    height: 300px;
-  }
-}
-
-//Carousel-Card Section
-.my-items {
-  color: #9c9c9c;
-  background-color: #fff;
-  padding: 0;
-
-  .item-heading h5 {
-    color: #333;
-    font-weight: bold;
-  }
-  .item-heading i {
-    font-size: smaller;
-    background: cornflowerblue;
-    border-radius: 50%;
-    padding: 2px;
-    color: #fff;
-  }
-}
-
-//Card Profile
-.items-profile {
-  .items-content img {
-    height: 45px;
-  }
-
-  .items-content h6 {
-    color: #333;
-    font-weight: bold;
-    font-size: 0.875rem;
-  }
-
-  .items-content p {
-    font-size: 0.75rem;
-    opacity: 0.9;
-  }
-
-  .progress {
-    color: #e08318;
-    height: 40px;
-    width: 75px;
-    background: #e4c5a3;
-    opacity: 0.6;
-
-    span {
-      font-weight: bold;
+    .carousel-item {
+      height: 300px;
     }
   }
 
-  .progress-g {
-    padding: 6px;
-    color: #8dec8d;
-    height: 35px;
-    width: 67px;
-    background: #cdf5d3;
-    opacity: 0.6;
-
-    span {
-      font-weight: bold;
-    }
-  }
-}
-
-//Card Section
-.card-section {
-  color: #333;
-  .card::before {
-    content: '\2661';
-    position: absolute;
-    width: 30px;
-    top: 0px;
-    right: 0px;
-    font-size: 25px;
+  //Carousel-Card Section
+  .my-items {
     color: #9c9c9c;
-  }
-  .card {
-    height: 250px;
-    text-align: center;
-    margin-bottom: 1rem;
-    position: relative;
+    background-color: #fff;
+    padding: 0;
 
-    i {
-      float: right;
-    }
-
-    img {
-      height: 80px;
-      margin-top: 30px;
-    }
-
-    h5 {
-      font-size: 14px;
+    .item-heading h5 {
+      color: #333;
       font-weight: bold;
     }
+    .item-heading i {
+      font-size: smaller;
+      background: cornflowerblue;
+      border-radius: 50%;
+      padding: 2px;
+      color: #fff;
+    }
+  }
 
-    p {
+  //Card Profile
+  .items-profile {
+    .items-content img {
+      height: 45px;
+    }
+
+    .items-content h6 {
+      color: #333;
+      font-size: 0.875rem;
+    }
+
+    .items-content p {
       font-size: 0.75rem;
       opacity: 0.9;
     }
 
-    .card-footer:hover {
-      background: #007bff;
-      color: #fff;
+    .progress {
+      color: #e08318;
+      height: 40px;
+      width: 75px;
+      background: #e4c5a3;
+      opacity: 0.6;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .progress-g {
+      padding: 6px;
+      color: #8dec8d;
+      height: 35px;
+      width: 67px;
+      background: #cdf5d3;
+      opacity: 0.6;
+
+      span {
+        font-weight: bold;
+      }
     }
   }
-}
 
-//To-Do
-.to-do-item {
-  i {
-    background: #cdf5d3;
-    border-radius: 50%;
-    color: #72e272;
-  }
-
-  h4 {
-    font-weight: bold;
+  //Card Section
+  .card-section {
     color: #333;
+    .card::before {
+      content: '\2661';
+      position: absolute;
+      width: 30px;
+      top: 0px;
+      right: 0px;
+      font-size: 25px;
+      color: #9c9c9c;
+    }
+    .card {
+      height: 250px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+
+      i {
+        float: right;
+      }
+
+      img {
+        height: 80px;
+        margin-top: 30px;
+      }
+
+      h5 {
+        font-size: 14px;
+        font-weight: 100;
+      }
+
+      p {
+        font-size: 0.75rem;
+        opacity: 0.9;
+      }
+
+      .card-footer:hover {
+        background: #007bff;
+        color: #fff;
+      }
+    }
   }
 
-  span {
-    color: #9c9c9c;
-    opacity: 0.9;
+  //To-Do
+  .to-do {
+    background: #fff;
+    color: #333;
+
+    i {
+      background: cornflowerblue;
+      border-radius: 50%;
+      padding: 2px;
+      color: #fff;
+    }
+    .to-do-item {
+      i {
+        background: #cdf5d3;
+        border-radius: 50%;
+        color: #72e272;
+      }
+
+      h4 {
+        font-weight: bold;
+        color: #333;
+      }
+
+      span {
+        color: #9c9c9c;
+        opacity: 0.9;
+      }
+    }
   }
 }
