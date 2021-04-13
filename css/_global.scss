@@ -30,23 +30,22 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  gap: 21px;
+  gap: 24px;
+  grid-template-areas:
+    'carousel  carousel items'
+    'cells cells items'
+    'cells cells todo';
 }
 .div1 {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: carousel;
   margin-top: 24px;
 }
 .div2 {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: items;
 }
 .div3 {
-  grid-area: 2 / 1 / 3 / 2;
-  position: absolute;
-  left: 0;
-  bottom: 70px;
+  grid-area: cells;
 }
 .div4 {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: todo;
 }
