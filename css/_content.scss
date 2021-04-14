@@ -15,7 +15,10 @@
     );
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+
+    .welcome-text {
+      margin: 16px auto 0 12px;
+    }
 
     .welcome-img {
       height: 100px;
@@ -25,6 +28,7 @@
       width: 150px;
       height: 90px;
       background-color: #3333;
+      margin: 0 16px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,7 +46,7 @@
   }
   //Carousel Section
   .carousel-section {
-    max-width: 717px;
+    max-width: 100%;
 
     .carousel-item {
       height: 310px;

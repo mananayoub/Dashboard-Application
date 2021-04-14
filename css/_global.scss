@@ -32,7 +32,7 @@ a {
   grid-template-columns: 2fr 1fr;
   gap: 24px;
   grid-template-areas:
-    'carousel  carousel items'
+    'carousel carousel items'
     'cells cells items'
     'cells cells todo';
 }

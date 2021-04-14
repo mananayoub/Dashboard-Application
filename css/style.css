@@ -35,7 +35,7 @@ a {
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   gap: 24px;
-      grid-template-areas: 'carousel  carousel items' 'cells cells items' 'cells cells todo';
+      grid-template-areas: 'carousel carousel items' 'cells cells items' 'cells cells todo';
 }
 
 .div1 {
@@ -166,9 +166,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+}
+
+.welcome .welcome-content .welcome-text {
+  margin: 16px auto 0 12px;
 }
 
 .welcome .welcome-content .welcome-img {
@@ -179,6 +180,7 @@ a {
   width: 150px;
   height: 90px;
   background-color: #3333;
+  margin: 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +210,7 @@ a {
 }
 
 .welcome .carousel-section {
-  max-width: 717px;
+  max-width: 100%;
 }
 
 .welcome .carousel-section .carousel-item {
