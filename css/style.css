@@ -104,7 +104,7 @@ a {
 }
 
 .topbar {
-  height: 60px;
+  height: 73px;
 }
 
 .topbar .sidebar-brand {
@@ -154,7 +154,7 @@ a {
 }
 
 .welcome .welcome-content {
-  height: 10.688rem;
+  height: 8.688rem;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(16%, #ffbf9c), color-stop(41%, #c96aa2), color-stop(68%, #d651cd), color-stop(83%, #8c5eea), to(#8f22e3));
   background: linear-gradient(90deg, #ffbf9c 16%, #c96aa2 41%, #d651cd 68%, #8c5eea 83%, #8f22e3 100%);
