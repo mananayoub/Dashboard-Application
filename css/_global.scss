@@ -26,26 +26,27 @@ a {
   }
 }
 
-.grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 24px;
-  grid-template-areas:
-    'carousel carousel items'
-    'cells cells items'
-    'cells cells todo';
-}
+// .grid {
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: 2fr;
+//   grid-template-areas:
+//     'carousel carousel items'
+//     'cells cells items'
+//     'cells cells todo';
+// }
 .div1 {
   grid-area: carousel;
   margin-top: 24px;
 }
-.div2 {
-  grid-area: items;
-}
+// .div2 {
+//   grid-area: items;
+// }
 .div3 {
+  margin-top: 24px;
   grid-area: cells;
 }
 .div4 {
+  margin-top: 16px;
   grid-area: todo;
 }

@@ -2,7 +2,7 @@
   color: #9c9c9c;
   font-size: 14px;
   background-color: #fff;
-  width: 271px;
+  width: 278px;
 
   .accordion-body {
     display: flex;
@@ -12,6 +12,7 @@
   .nav-link {
     display: flex;
     align-items: center;
+    margin-left: 16px;
 
     .fa-chevron-right {
       margin-left: auto;
